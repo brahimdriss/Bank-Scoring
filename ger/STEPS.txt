@@ -1,0 +1,25 @@
+CLUSTERING
+KMEANS
+DBSCAN
+(KMEDOIDE LEZEM TIMPLEMENTIH)
+
+6  Variables quantitatives
+14 Variables qualitatives
+
+CASE 1
+* Centrage quanti
+* PCA(quanti) => KMEANS : DATA(quanti)
+* KernelPCA(quanti) => KMEANS : DATA(quanti) 
+* KMEANS(quanti) 
+* DBSCAN(quanti) 
+
+CASE 3
+
+CASE 2
+* Onehot(quali)
+* Min/max ( quanti) 
+* Concat
+	=> Kmeans(both)
+	=> PCA(both) => Kmeans(both)
+	=> KernelPCA(both) => Kmeans(both)
+
