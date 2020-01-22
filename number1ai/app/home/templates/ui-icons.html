@@ -1,0 +1,108 @@
+{% extends "base-site.html" %}
+
+{% block title %} UI Icons {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<h1> Bank Of Germany Classifier </h1>
+<h3> using XGboost with 88% precision </h3>
+
+
+<div >
+      <form role="form" action="" method="POST">
+
+                            {{ form.hidden_tag() }}
+
+                            <p>
+                              {{ form.Status_Account.label }}<br>
+                              {{ form.Status_Account}}
+                            </p>
+                            
+                            <p>
+                              {{ form.Duration.label }}<br>
+                              {{ form.Duration }}
+                            </p>
+
+                            <p>
+                              {{ form.Credit_History.label }}<br>
+                              {{ form.Credit_History }}
+                            </p>
+
+                            <p>
+                              {{ form.Credit_Amount.label }}<br>
+                              {{ form.Credit_Amount }}
+                            </p>
+
+                            <p>
+                              {{ form.Saving_Account.label }}<br>
+                              {{ form.Saving_Account }}
+                            </p>
+
+                            <p>
+                              {{ form.Present.label }}<br>
+                              {{ form.Present }}
+                            </p>
+
+                            <p>
+                              {{ form.Property.label }}<br>
+                              {{ form.Property }}
+                            </p>
+
+                            <p>
+                              {{ form.Age.label }}<br>
+                              {{ form.Age }}
+                            </p>
+
+                            <p>
+                              {{ form.Other_Installment.label }}<br>
+                              {{ form.Other_Installment }}
+                            </p>
+
+                            <p>
+                              {{ form.Housing.label }}<br>
+                              {{ form.Housing }}
+                            </p>
+
+
+                            <p>
+                              {{ form.Foreign_Worker.label }}<br>
+                              {{ form.Foreign_Worker }}
+                            </p>
+
+
+
+                            
+                            <p>
+                            Prediction du client : <span class="text-danger">{{ pred }}</span>
+                            </p>
+
+                            <!-- 
+                            <p>Sepal Length: {{ usa }}</p>
+                            <p>Sepal Width:  {{ asu }}</p> 
+                            -->
+
+                            <h6 class="card-category">
+                              {% if msg %}
+                              <span class="text-danger">{{ msg | safe }}</span>
+                              {% else %}
+                              Complete your form
+                              {% endif %}
+                            </h6>
+                         
+
+               <div>
+                <button type="submit" name="create_classify" class="btn btn-fill btn-primary">Predict</button>
+              </div>
+                            
+      </form>
+      
+
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
