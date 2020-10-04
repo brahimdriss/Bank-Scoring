@@ -3,12 +3,6 @@
 ## Higher Private School of Engineering and Technology - Ecole Supérieure Privée d'Ingénierie et de Technologie
 
 
-### Credits & Links : 
-Template :
-[Flask Dashboard Black](https://appseed.us/admin-dashboards/flask-dashboard-black) - provided by **AppSeed**
-Two Dash dashboards merge :
-https://github.com/eNMS-automation/eNMS
-
 
 ### Subject
 Using 3 different bank datasets (Taiwan ,Usa, Germany) , our goal was to end up with an accurate scoring system by clustering and classifiying clients in order to help optimize the decision making process when it comes to handing out loans .
@@ -60,3 +54,10 @@ The interface contains a formular where we enter a new client's credentials and 
 ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 ## Creation of an interactive Analytical Dashboard for Data visualization and data Analysis
 In this interface, the user can visually track, analyze and display key performance indicators (KPI), metrics and key data points.
+
+
+### Credits & Links : 
+Template :
+[Flask Dashboard Black](https://appseed.us/admin-dashboards/flask-dashboard-black) - provided by **AppSeed**
+Two Dash dashboards merge :
+https://github.com/eNMS-automation/eNMS
