@@ -3,7 +3,6 @@
 ## Higher Private School of Engineering and Technology - Ecole Supérieure Privée d'Ingénierie et de Technologie
 
 
-
 ### Subject
 Using 3 different bank datasets (Taiwan ,Usa, Germany) , our goal was to end up with an accurate scoring system by clustering and classifiying clients in order to help optimize the decision making process when it comes to handing out loans .
 
@@ -51,10 +50,14 @@ Before applying the Classification algorithms we need to deal with the missing v
 We created a web based application using flask for model deployment and integration of a Dashboard for data analysis.
 ## Predictive model deployment
 The interface contains a formular where we enter a new client's credentials and his previous interactions and transactions with the bank (behavior) in order to predict his eligibility for future loans application. 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/ibrahimba9/Bank-Scoring/blob/master/Screenshots/pred1.png?raw=true)
+![alt text](https://github.com/ibrahimba9/Bank-Scoring/blob/master/Screenshots/pred2.png?raw=true)
+
 ## Creation of an interactive Analytical Dashboard for Data visualization and data Analysis
 In this interface, the user can visually track, analyze and display key performance indicators (KPI), metrics and key data points.
-
+![alt text](https://github.com/ibrahimba9/Bank-Scoring/blob/master/Screenshots/Dashboard1.png?raw=true)
+![alt text](https://github.com/ibrahimba9/Bank-Scoring/blob/master/Screenshots/dashboard2.png?raw=true)
+![alt text](https://github.com/ibrahimba9/Bank-Scoring/blob/master/Screenshots/Dashboard3.png?raw=true)
 
 ### Credits & Links : 
 Template :
