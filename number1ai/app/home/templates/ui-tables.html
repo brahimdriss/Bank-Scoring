@@ -1,0 +1,57 @@
+{% extends "base-site.html" %}
+
+{% block title %} UI Tables {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<style>
+    table {
+        color: black !important;
+    }
+
+    .table>tbody>tr>td {
+  color: rgba(31, 76, 226, 0.7) !important;
+        }
+
+</style>
+
+<div>
+<h1> Bank Of Germany    </h1>
+
+</div>
+
+<div class="container" style="overflow:scroll">
+    {{ df_view.to_html(classes="table striped",na_rep="-",table_id="table") | safe}}
+
+</div>
+
+
+<!-- 
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#example2').DataTable();
+    });
+</script> -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#table').DataTable({responsive: true});
+        });
+    </script>
+
+
+{% endblock javascripts %}
